@@ -23,9 +23,15 @@ exports.handler = function (event, context, callback) {
 		}
 	});
 
-	console.log(receiver)
-	console.log(sender)
-	console.log(message)
+	console.log('###########################################################')
+	console.log('###########################################################')
+	console.log('###########################################################')
+	console.log('Receiver: '+receiver)
+	console.log('Sender: '+sender)
+	console.log('Message: '+message)
+	console.log('###########################################################')
+	console.log('###########################################################')
+	console.log('###########################################################')
 
 
 	console.log("Sending message", message, "to receiver", receiver);
