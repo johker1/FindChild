@@ -4,9 +4,9 @@ const sns = new AWS.SNS();
 exports.handler = function (event, context, callback) {
 
 	let childrenid = Number(event['childrenid']);
-	let receiver = '';
-	let sender = '';
-	let message = '';
+	let receiver;
+	let sender;
+	let message;
 
 	console.log(childrenid);
 
@@ -22,6 +22,10 @@ exports.handler = function (event, context, callback) {
 			message = 'Your children is now with me';
 		}
 	});
+
+	console.log(receiver)
+	console.log(sender)
+	console.log(message)
 
 
 	console.log("Sending message", message, "to receiver", receiver);
