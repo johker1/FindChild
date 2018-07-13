@@ -20,18 +20,19 @@ exports.handler = function (event, context, callback) {
 			receiver = data.Item['phone'];
 			sender = 'AWS Lost Children';
 			message = 'Your children is now with me';
+			console.log('###########################################################')
+			console.log('###########################################################')
+			console.log('###########################################################')
+			console.log('Receiver: ' + receiver)
+			console.log('Sender: ' + sender)
+			console.log('Message: ' + message)
+			console.log('###########################################################')
+			console.log('###########################################################')
+			console.log('###########################################################')
 		}
 	});
 
-	console.log('###########################################################')
-	console.log('###########################################################')
-	console.log('###########################################################')
-	console.log('Receiver: '+receiver)
-	console.log('Sender: '+sender)
-	console.log('Message: '+message)
-	console.log('###########################################################')
-	console.log('###########################################################')
-	console.log('###########################################################')
+
 
 
 	console.log("Sending message", message, "to receiver", receiver);
