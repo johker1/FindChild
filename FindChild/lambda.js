@@ -24,7 +24,7 @@ exports.handler = function (event, context, callback) {
 	});
 
 	console.log("Sending message", message, "to receiver", receiver);
-
+	
 	sns.publish({
 		Message: message,
 		MessageAttributes: {
