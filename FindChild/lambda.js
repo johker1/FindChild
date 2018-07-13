@@ -19,7 +19,7 @@ exports.handler = function (event, context, callback) {
 		} else {
 			receiver = data.Item['phone'];
 
-			sender = 'AWS Lost Children';
+			sender = 'LostChildren';
 
 			message = 'Your children is now with me';
 
