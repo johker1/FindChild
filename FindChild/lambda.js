@@ -15,7 +15,7 @@ exports.handler = function (event, context, callback) {
 		Key: { 'id': childrenid }
 	}, function (err, data) {
 		if (err) {
-			console.log(err)
+			console.log(err);
 		} else {
 			receiver = data.Item['phone'];
 			sender = 'AWS Lost Children';
@@ -23,8 +23,9 @@ exports.handler = function (event, context, callback) {
 		}
 	});
 
+
 	console.log("Sending message", message, "to receiver", receiver);
-	
+
 	sns.publish({
 		Message: message,
 		MessageAttributes: {
